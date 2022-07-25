@@ -186,6 +186,7 @@ module.exports = function (
     {
       start: 'react-scripts start',
       build: 'react-scripts build',
+      watch: 'react-scripts watch',
       test: 'react-scripts test',
       eject: 'react-scripts eject',
     },
@@ -402,6 +403,13 @@ module.exports = function (
       )
     );
   }
+
+  console.log();
+  console.log('This is a fork of the official create-react-app (https://github.com/facebook/create-react-app).');
+  console.log('This fork adds a few things that allow you to watch the build directory for changes:');
+  console.log(chalk.cyan(`  ${displayedCommand} watch`));
+  console.log('    Watches the build folder so you can serve it with another framework, like Django.');
+  
   console.log();
   console.log('Happy hacking!');
 };
